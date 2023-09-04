@@ -9,7 +9,7 @@ export function App(){
         setCurrentDifficulty(difficulty);
     }
     return<div>
+       <MenuListe onItemClick={updateDifficulty} difficulty={currentDifficulty}/>
         {<DisplayDifficulty difficulty={currentDifficulty} />}
-       <MenuListe difficulty={currentDifficulty}/>
     </div>;
 }
